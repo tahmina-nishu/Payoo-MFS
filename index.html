@@ -11,35 +11,41 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+  <!-- ------------ Header Part --------------  -->
     <header>
 
     </header>
 
+    <!-- ------------ Main Part --------------  -->
     <main class=" flex items-center justify-center min-h-screen">
         <div class="mockup-phone">
             <div class="camera"></div>
             <div class="display">
-              <div class="artboard artboard-demo phone-1">
+              <div class="artboard artboard-demo phone-2">
                 
+                <!-- Login Part  -->
                 <div class="hero bg-base-200 min-h-screen">
                     <div class="hero-content flex-col lg:flex-row-reverse">
                       <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
+                          
+                          <!-- Mobile Number  -->
                           <div class="form-control">
                             <label class="label">
                               <span class="label-text  font-medium">Mobile Number</span>
                             </label>
                             <input id="phone-number" type="text" placeholder="Enter your number" class="input input-bordered" required />
                           </div>
+
+                          <!-- Pin Number  -->
                           <div class="form-control">
                             <label class="label">
                               <span class="label-text  font-medium">4 Digit Pin</span>
                             </label>
                             <input id="pin-number" type="password" placeholder="Enter 4 Digit Pin" class="input input-bordered" required />
-                            <label class="label">
-                              <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
-                            </label>
                           </div>
+
+                          <!-- Login Button  -->
                           <div class="form-control mt-6">
                             <button id="login-btn" class="btn bg-[#0874F2] text-white rounded-3xl font-medium hover:text-black">Login</button>
                           </div>
@@ -52,6 +58,7 @@
         </div>
     </main>
 
+    <!-- ------------ Footer Part --------------  -->
     <footer>
 
     </footer>

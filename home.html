@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="shortcut icon" href="payoo.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        p{
+            color: #08080880;
+        }
+    </style>
+</head>
+<body>
+    <!-- ------------ Header Part --------------  -->
+    <header>
+
+    </header>
+
+    <!-- ------------ Main Part --------------  -->
+    <main class=" flex items-center justify-center min-h-screen">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-4 p-5">
+                
+                <!-- Nav bar  -->
+                <div class="flex items-center gap-7">
+                    <!-- Available Balance  -->
+                    <div class="stats shadow">
+                        <div class="stat">
+                        <div class="stat-value font-extrabold text-lg">$45000</div>
+                        <div class="stat-desc text-sm">Available Balance</div>
+                        </div>
+                    </div>
+
+                    <!-- Logout Button  -->
+                    <button class="btn btn-outline">
+                        <div class="flex gap-2 items-center">
+                            <img class="w-5 " src="https://img.icons8.com/windows/32/exit.png" alt="exit"/>
+                            Log Out
+                        </div>
+                    </button>
+                </div>
+                <div class="divider"></div>
+
+                <!-- Welcome -->
+                 <div>
+                    <h3 class="text-xl font-bold">🔥Welcome to Payooo!</h3>
+                    <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+                 </div>
+
+                <!-- User Action Button  -->
+                <div class="grid grid-cols-2 gap-2 mt-3">
+                    <!-- Button - 1  -->
+                    <button class="flex flex-col items-center bg-white shadow-md rounded-xl p-2 w-32">
+                        <img class="w-5" src="https://img.icons8.com/external-itim2101-flat-itim2101/64/external-money-money-and-economy-itim2101-flat-itim2101-5.png" alt="external-money-money-and-economy-itim2101-flat-itim2101-5"/>
+                        <p>Add Money</p>
+                    </button>
+                    
+                    <!-- Button - 2  -->
+                    <button class="flex flex-col items-center bg-white shadow-md rounded-xl p-2 w-32">
+                        <img class="w-5" src="https://img.icons8.com/external-others-inmotus-design/67/external-Cash-Out-vkontakte-others-inmotus-design.png" alt="external-Cash-Out-vkontakte-others-inmotus-design"/>
+                        <p>Cashout</p>
+                    </button>
+                    <!-- Button - 3  -->
+                    <button class="flex flex-col items-center bg-white shadow-md rounded-xl p-2 w-32">
+                        <img class="w-5" src="https://img.icons8.com/external-rabit-jes-flat-gradient-rabit-jes/62/external-transfer-money-mobile-rabit-jes-flat-gradient-rabit-jes.png" alt="external-transfer-money-mobile-rabit-jes-flat-gradient-rabit-jes"/>
+                        <p>Transfer Money</p>
+                    </button>
+                    <!-- Button - 4 -->
+                    <button class="flex flex-col items-center bg-white shadow-md rounded-xl p-2 w-32">
+                        <img class="w-5" src="https://img.icons8.com/color-glass/48/cash-in-hand.png" alt="cash-in-hand"/>
+                        <p>Get Bonus</p>
+                    </button>
+                    <!-- Button - 5  -->
+                    <button class="flex flex-col items-center bg-white shadow-md rounded-xl p-2 w-32">
+                        <img class="w-5" src="https://img.icons8.com/color/50/bill.png" alt="bill"/>
+                        <p>Pay bill</p>
+                    </button>
+                    <!-- Button - 6  -->
+                    <button class="flex flex-col items-center bg-white shadow-md rounded-xl p-2 w-32">
+                        <img class="w-5" src="https://img.icons8.com/external-filled-outline-wichaiwi/64/external-transactions-gamefi-filled-outline-wichaiwi.png" alt="external-transactions-gamefi-filled-outline-wichaiwi"/>
+                        <p>Transactions</p>
+                    </button>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- --------Add Money Form Start---------  -->
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      
+                      <!-- Mobile Number  -->
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text  font-medium">Mobile Number</span>
+                        </label>
+                        <input id="phone-number" type="text" placeholder="Enter your number" class="input input-bordered" required />
+                      </div>
+
+                      <!-- Pin Number  -->
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text  font-medium">4 Digit Pin</span>
+                        </label>
+                        <input id="pin-number" type="password" placeholder="Enter 4 Digit Pin" class="input input-bordered" required />
+                      </div>
+
+                      <!-- Login Button  -->
+                      <div class="form-control mt-6">
+                        <button id="login-btn" class="btn bg-[#0874F2] text-white rounded-3xl font-medium hover:text-black">Add Money</button>
+                      </div>
+                    </form>
+                  </div>
+                <!-- --------Add Money Form End----------  -->
+                
+              </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ------------ Footer Part --------------  -->
+    <footer>
+
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>
