@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
 
-    <link rel="shortcut icon" href="payoo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="payoo.png" type="image/x-icon">
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
         p{
@@ -99,26 +99,40 @@
                       <!-- Mobile Number  -->
                       <div class="form-control">
                         <label class="label">
-                          <span class="label-text  font-medium">Mobile Number</span>
+                          <span class="label-text  font-medium">Amount to Add</span>
                         </label>
-                        <input id="phone-number" type="text" placeholder="Enter your number" class="input input-bordered" required />
+                        <input id="input-add-money" type="text" placeholder="Add Amount to withdraw" class="input input-bordered" required />
                       </div>
 
                       <!-- Pin Number  -->
                       <div class="form-control">
                         <label class="label">
-                          <span class="label-text  font-medium">4 Digit Pin</span>
+                          <span class="label-text  font-medium">Pin Number</span>
                         </label>
-                        <input id="pin-number" type="password" placeholder="Enter 4 Digit Pin" class="input input-bordered" required />
+                        <input id="input-pin"  type="password" placeholder="Enter 4 Digit Pin number" class="input input-bordered" required />
                       </div>
 
-                      <!-- Login Button  -->
+                      <!-- Add Money Button  -->
                       <div class="form-control mt-6">
-                        <button id="login-btn" class="btn bg-[#0874F2] text-white rounded-3xl font-medium hover:text-black">Add Money</button>
+                        <button id="add-money-btn" class="btn bg-[#0874F2] text-white rounded-3xl font-medium hover:text-black">Add Money</button>
                       </div>
                     </form>
                   </div>
                 <!-- --------Add Money Form End----------  -->
+
+
+                <!-- 
+                
+                Money Add korar steps------ >>
+
+                Step - 1 : Event handler (for Clicking the button 'Add Money')
+                Step - 2 : Check Pin
+                Step - 3 : Get Amount
+                Step - 4 : Get current amount 
+                Step - 5 : add new amount with current amount 
+                Step - 6 : Update the new amount  
+                
+                -->
                 
               </div>
             </div>
@@ -130,6 +144,6 @@
 
     </footer>
 
-    <script src="login.js"></script>
+    <script src="home.js"></script>
 </body>
 </html>
