@@ -14,8 +14,7 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
     // console.log(inputPin);
 
     if(inputPin === '1234')
-    {
-        
+    {      
         // ------------Get current balance----------
         const currentMoney = document.getElementById('current-amount').innerText;
         console.log(currentMoney);
