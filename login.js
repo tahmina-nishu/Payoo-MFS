@@ -19,7 +19,9 @@ document.getElementById('login-btn').addEventListener('click', function(event){
 
     // Step - 5 :  validate phone and pin
     if(phoneNumber === '01846152387' && pinNumber === '1234')
+    {
         alert("You are logged in.");
+    }
     else
         alert("Wrong phone number or pin.");
 })

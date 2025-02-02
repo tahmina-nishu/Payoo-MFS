@@ -1,5 +1,8 @@
 // Add Money to the account
 
+
+/*
+
 document.getElementById('add-money-btn').addEventListener('click', function(event){
     event.preventDefault();
     // console.log('clicked');
@@ -28,4 +31,16 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
     }
     else
     alert('failed to add money');
+})
+
+*/
+
+// uporer kaj ta i utilities e ekta function create kore sei function k call kore kora jabe 
+
+document.getElementById('add-money-btn').addEventListener('click', function(event){
+    event.preventDefault();
+
+    // Get input value
+    const addedMoney = getInputFieldValueById();
+    console.log(addedMoney);
 })
