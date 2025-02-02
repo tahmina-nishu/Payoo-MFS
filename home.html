@@ -58,13 +58,13 @@
                 <!-- User Action Button  -->
                 <div class="grid grid-cols-2 gap-2 mt-3">
                     <!-- Button - 1  -->
-                    <button class="flex flex-col items-center bg-white shadow-md rounded-xl p-2 w-32">
+                    <button id="add-money" class="flex flex-col items-center bg-white shadow-md rounded-xl p-2 w-32">
                         <img class="w-5" src="https://img.icons8.com/external-itim2101-flat-itim2101/64/external-money-money-and-economy-itim2101-flat-itim2101-5.png" alt="external-money-money-and-economy-itim2101-flat-itim2101-5"/>
-                        <p>Add Money</p>
+                        <p id="add-money-text">Add Money</p>
                     </button>
                     
                     <!-- Button - 2  -->
-                    <button class="flex flex-col items-center bg-white shadow-md rounded-xl p-2 w-32">
+                    <button id="cash-out" class="flex flex-col items-center bg-white shadow-md rounded-xl p-2 w-32">
                         <img class="w-5" src="https://img.icons8.com/external-others-inmotus-design/67/external-Cash-Out-vkontakte-others-inmotus-design.png" alt="external-Cash-Out-vkontakte-others-inmotus-design"/>
                         <p>Cashout</p>
                     </button>
@@ -93,7 +93,7 @@
                 <div class="divider"></div>
 
                 <!-- --------Add Money Form Start---------  -->
-                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
+                <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
                     <form class="card-body">
                       
                       <!-- Mobile Number  -->
@@ -134,8 +134,8 @@
                 
                 -->
                 
-                <!-- --------Add Money Form Start---------  -->
-                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <!-- --------Cash Out Form Start---------  -->
+                <div id="cash-out-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
                   <form class="card-body">
                     
                     <!-- Mobile Number  -->
@@ -154,7 +154,7 @@
                       <input id="cashout-input-pin"  type="password" placeholder="Enter 4 Digit Pin number" class="input input-bordered" required />
                     </div>
 
-                    <!-- Add Money Button  -->
+                    <!-- Cash Out Button  -->
                     <div class="form-control mt-6">
                       <button id="cash-out-btn" class="btn bg-[#0874F2] text-white rounded-3xl font-medium hover:text-black">Cash Out</button>
                     </div>
@@ -173,5 +173,6 @@
 
     <script src="addMoney.js"></script>
     <script src="cashOut.js"></script>
+    <script src="clickedButton.js"></script>
 </body>
 </html>
