@@ -64,6 +64,21 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
         const updatedBalance = currentBalance + addedMoney;
         // Update the current balance
         document.getElementById('current-amount').innerText = updatedBalance;
+
+        // Add to transaction history
+        const entryElement = document.createElement('p');
+        entryElement.innerText = `Added: ${addedMoney} Tk. Balance: ${updatedBalance}`;
+        console.log(entryElement);
+
+        /*
+         ekta common function banay seta diye added history or cashout history duitai add kore dibo history te append child kore-----------
+
+         er jonno : 
+            1. kothay add korbo seta khujbo
+            2. tarpor oikhane appendchild kore dibo
+        */
+
+        document.getElementById('transaction-container').appendChild(entryElement);
     }
     else
         alert('failed to add money');
