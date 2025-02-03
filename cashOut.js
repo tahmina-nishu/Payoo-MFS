@@ -54,15 +54,27 @@ document.getElementById('cash-out-btn').addEventListener('click', function(event
             const currentBalance = getTextFieldValueById('current-amount');
             console.log(currentBalance);
 
-            // add the balance
+            // cut the balance
             const updatedBalance = currentBalance - cashOut;
         
     
             if(updatedBalance < 0)
                 alert('You have not enough balance to cash out!');
             else
+            {
                 // Update the current balance
                  document.getElementById('current-amount').innerText = updatedBalance;
+
+                // Add to transaction history
+                const div = document.createElement('div');
+                div.classList.add('border-2', 'shadow-lg', 'bg-white', 'px-4', 'py-2', 'rounded-lg');
+                div.innerHTML = `
+                    <h4 class="font-bold">Cash Out</h4>
+                    <p>withdraw : ${cashOut} . New Balance : ${updatedBalance}</p>
+                `
+
+                document.getElementById('transaction-container').appendChild(div);
+            }
         }
     else
         alert('failed to cash out');
