@@ -1,4 +1,5 @@
 // Add Money to the account
+/*
 
 document.getElementById('cash-out-btn').addEventListener('click', function(event){
     event.preventDefault();
@@ -31,4 +32,38 @@ document.getElementById('cash-out-btn').addEventListener('click', function(event
     }
     else
     alert('failed to cash out');
+})
+
+*/
+
+// uporer kaj ta i utilities e ekta function create kore sei function k call kore kora jabe 
+
+document.getElementById('cash-out-btn').addEventListener('click', function(event){
+    event.preventDefault();
+
+    console.log('cashout clicked');
+
+    const cashOut = getInputValueById('input-cashout');
+    const cashOutPin = getInputValueById('cashout-input-pin');
+
+    console.log(cashOut, cashOutPin);
+
+    if(cashOutPin === 1234)
+        {   
+            // Get current balance
+            const currentBalance = getTextFieldValueById('current-amount');
+            console.log(currentBalance);
+
+            // add the balance
+            const updatedBalance = currentBalance - cashOut;
+        
+    
+            if(updatedBalance < 0)
+                alert('You have not enough balance to cash out!');
+            else
+                // Update the current balance
+                 document.getElementById('current-amount').innerText = updatedBalance;
+        }
+    else
+        alert('failed to cash out');
 })

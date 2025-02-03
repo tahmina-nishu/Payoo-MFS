@@ -45,10 +45,26 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
     // const addedMoney = getInputFieldValueById();
 
     // Get added amount
-    const addedMoney = getValueById('input-add-money');
+    const addedMoney = getInputValueById('input-add-money');
     console.log(addedMoney);
+    console.log(typeof(addedMoney));
 
     // Get input pin
-    const inputPin = getValueById('input-pin');
+    const inputPin = getInputValueById('input-pin');
     console.log(inputPin);
+
+    // verify input pin
+    if(inputPin === 1234)
+    {
+        // Get current balance
+        const currentBalance = getTextFieldValueById('current-amount');
+        console.log(currentBalance);
+
+        // add the balance
+        const updatedBalance = currentBalance + addedMoney;
+        // Update the current balance
+        document.getElementById('current-amount').innerText = updatedBalance;
+    }
+    else
+        alert('failed to add money');
 })

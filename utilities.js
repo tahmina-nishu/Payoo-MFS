@@ -14,7 +14,13 @@ er jonno------------
     -> 
 
 */
-function getValueById(id){
-    const value = document.getElementById(id).value;
+function getInputValueById(id){
+    const value =parseFloat(document.getElementById(id).value);
     return value;
+}
+
+
+function getTextFieldValueById(id){
+    const textValue = parseFloat(document.getElementById(id).innerText);
+    return textValue;
 }
