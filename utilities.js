@@ -24,3 +24,20 @@ function getTextFieldValueById(id){
     const textValue = parseFloat(document.getElementById(id).innerText);
     return textValue;
 }
+
+function showSectionById(id){
+    // At first hide all section . then remove hidden class from the selected class
+
+
+    // Hide cash out form
+    document.getElementById('cash-out-form').classList.add('hidden');
+
+    // Hide add money form
+    document.getElementById('add-money-form').classList.add('hidden');
+
+    // Hide Transaction History
+    document.getElementById('transaction-history').classList.add('hidden');
+
+    // Show the selected section
+    document.getElementById(id).classList.remove('hidden');
+}

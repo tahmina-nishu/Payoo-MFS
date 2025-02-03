@@ -10,7 +10,8 @@
 
 
 
-// Handle 'Add Money' button
+/*
+------------------- Handle 'Add Money' button ----------------
 
 document.getElementById('add-money').addEventListener('click', function(){
     // Hide cash out form
@@ -20,9 +21,12 @@ document.getElementById('add-money').addEventListener('click', function(){
     document.getElementById('add-money-form').classList.remove('hidden');
 })
 
+*/
 
 
-// Handle 'Cash Out' button
+
+/*
+ ----------------Handle 'Cash Out' button--------------------
 
 document.getElementById('cash-out').addEventListener('click', function(){
     // Hide add money form
@@ -30,4 +34,29 @@ document.getElementById('cash-out').addEventListener('click', function(){
     
     // show cash out form
     document.getElementById('cash-out-form').classList.remove('hidden');
+})
+
+*/
+
+
+
+//jei button e click korbe seta active hobe. baki sob hidden thakbe.
+
+// ------------------- Handle 'Add Money' button ----------------
+document.getElementById('add-money').addEventListener('click', function(){
+    // show add money form
+    showSectionById('add-money-form');   
+})
+
+// ------------------- Handle 'Cashout' button ----------------
+document.getElementById('cash-out').addEventListener('click', function(){
+    // show cash out form
+    showSectionById('cash-out-form');   
+})
+
+// ------------------- Handle 'Transaction' button ----------------
+document.getElementById('transaction').addEventListener('click', function(){
+    console.log('transaction button clicked');
+    // show transaction history
+    showSectionById('transaction-history');   
 })
