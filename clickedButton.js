@@ -60,3 +60,33 @@ document.getElementById('transaction').addEventListener('click', function(){
     // show transaction history
     showSectionById('transaction-history');   
 })
+
+// Function to handle the button click and apply the active class
+function setActiveButton(button) {
+    // Remove active classes from all buttons
+    const allButtons = document.querySelectorAll('button');
+    allButtons.forEach(btn => {
+      btn.classList.remove('bg-[#0874F20D]', 'border-2', 'border-[#0874F2]');
+      const btnText = btn.querySelector('p');
+      if (btnText) {
+        btnText.classList.remove('text-[#0874F2]', 'font-bold');
+      }
+    });
+  
+    // Add active classes to the clicked button
+    button.classList.add('bg-[#0874F20D]', 'border-2', 'border-[#0874F2]');
+  
+    // Change the paragraph text color and font style inside the button
+    const buttonText = button.querySelector('p');
+    if (buttonText) {
+      buttonText.classList.add('text-[#0874F2]', 'font-bold');
+    }
+  }
+  
+  // Add event listeners to all buttons
+  document.querySelectorAll('button').forEach(button => {
+    button.addEventListener('click', () => {
+      setActiveButton(button);
+    });
+  });
+  
